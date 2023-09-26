@@ -130,3 +130,74 @@ button {
   margin-left: 20px;
   background-color: transparent;
 }
+
+.container {
+  position: relative;
+  bottom: 10%;
+  left: 38%;
+  width: 18%;
+  height: 150px;
+  padding: 7px 10px;
+  background: rgb(196, 153, 80);
+}
+
+.container-text {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Uchen", serif;
+}
+
+.box {
+  font-family: "Poppins", sans-serif;
+}
+.image {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.name {
+  font-size: 1rem;
+  margin-bottom: -9px;
+}
+.statement {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.content {
+  position: relative;
+  bottom: 80%;
+  left: 73%;
+  width: 20%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px;
+  background: rgb(196, 153, 80);
+}
+
+.content h4 {
+  font-size: 0.8rem;
+  padding: 0 5px;
+  font-weight: 400;
+  margin-left: 12px;
+}
+
+.content img {
+  margin-left: 5px;
+}
+
+.content p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
