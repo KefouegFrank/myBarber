@@ -2,6 +2,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Uchen&display=swap");
 
+/* Define CSS variables */
+:root {
+  --main-bg-color: rgb(21, 21, 21);
+  --secondary-color: #d6a354;
+  --text-color: #ffffff;
+  --container-bg-color: rgb(196, 153, 80);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,30 +17,41 @@
   text-decoration: none;
 }
 
+/* Header styles */
 header {
   height: 100vh;
   width: 100vw;
-  background-color: rgb(21, 21, 21);
-  position: absolute;
+  background-color: var(--main-bg-color);
+  position: relative;
+  overflow: hidden;
 }
+
 .banner-img {
   background-image: url(./assets/images/manknife.jpg);
   background-position: center;
-  background-size: contain;
   background-size: cover;
-  height: inherit;
+  height: 100%;
   width: 50%;
-  margin-left: 40%;
   position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10%;
 }
 
+.toggle-icon {
+  display: none;
+}
 .navbar {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
   font-family: "Poppins", sans-serif;
+  background-color: transparent;
 }
 
 .logo {
@@ -43,10 +62,9 @@ header {
 .logo-text {
   font-size: 30px;
   line-height: 30px;
-  color: #d6a354;
+  color: var(--secondary-color);
   font-weight: 500;
 }
-
 ul {
   display: flex;
   width: 50%;
@@ -59,8 +77,8 @@ ul li {
 }
 
 ul li a {
-  color: #ffffff;
-  font-size: 1.2rem;
+  color: var(--text-color);
+  font-size: 1.1rem;
   font-weight: 200;
   letter-spacing: 2px;
 }
@@ -69,8 +87,9 @@ ul li a {
   width: 28%;
   height: 40px;
 }
+
 .icons i {
-  color: #d6a354;
+  color: var(--secondary-color);
   font-size: 40px;
   padding: 10px;
   margin-top: -10px;
@@ -78,27 +97,21 @@ ul li a {
 
 a:hover {
   padding: 3px auto;
-  background-color: #d6a354;
+  background-color: var(--secondary-color);
 }
 
-/* .active {
-  padding: 3px auto;
-  background-color: #d6a354;
-} */
 section {
   position: relative;
   top: 10%;
   margin: 50px;
   width: 35%;
 }
-
 .banner {
   align-items: center;
   justify-content: center;
   letter-spacing: 1px;
   padding: 25px;
 }
-
 .banner-heading {
   font-size: 3.2rem;
   line-height: 50px;
@@ -114,21 +127,24 @@ section {
   font-weight: lighter;
   font-family: "Poppins", sans-serif;
   font-size: small;
-  color: #ffffff;
+  color: var(--text-color);
 }
-
 button {
   margin-top: 25px;
-  border: 1px solid #d6a354;
+  border: 1px solid var(--secondary-color);
   padding: 15px 35px;
-  background-color: #d6a354;
-  color: #ffffff;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   font-family: "Poppins", sans-serif;
 }
 
 .btn1 {
   margin-left: 20px;
   background-color: transparent;
+}
+
+.btn1:hover {
+  background-color: var(--secondary-color);
 }
 
 .container {
@@ -169,11 +185,12 @@ img {
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
   margin-top: 5px;
+  font-weight: 300;
 }
 
 .content {
   position: relative;
-  bottom: 80%;
+  bottom: 70%;
   left: 73%;
   width: 20%;
   height: 70px;
@@ -200,4 +217,55 @@ img {
   font-weight: 300;
   font-size: 1.5rem;
   margin-right: 10px;
+}
+
+/* media queries for responsiveness */
+
+/* Large devices */
+@media (min-width: 1200px) {
+}
+
+/* Medium devices */
+@media (min-width: 992px) and (max-width: 1100px) {
+  .navbar {
+    padding: 15px 40px;
+  }
+  .logo-text {
+    font-size: 30px;
+  }
+}
+
+/* Small devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+  .logo-text {
+    font-size: 26px;
+  }
+  .ul {
+    width: 100%;
+  }
+  .toggle-icon {
+    display: block;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+  .logo-text {
+    font-size: 24px;
+  }
+  .ul {
+    width: 100%;
+  }
+  .toggle-icon {
+    display: block;
+  }
+  .banner-img {
+    display: none;
+  }
 }

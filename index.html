@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbing Salon</title>
 
-    <!----------- font awersome ----------->
+    <!----------- fontawersome icons----------->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+
     <!-- css link -->
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -18,42 +19,41 @@
       <header>
         <div class="banner-img"></div>
         <nav class="navbar">
-          <!-- logo -->
+          <!-- Logo -->
           <div class="logo">
             <img
               src="./assets/images/noun-scissor.png"
               height="45px"
               width="45px"
-              alt="logo image"
+              alt="Barbers Logo"
             />
-
             <h3 class="logo-text">Barbers</h3>
           </div>
 
-          <!-- navbarlinks -->
+          <!-- Toggle Icon for Responsive Navigation -->
+          <div class="toggle-icon">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <!-- Navbar Links -->
           <ul>
-            <li class="active"><a href="#">Homes</a></li>
+            <li class="active"><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contant</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
 
-          <!-- login button-->
+          <!-- Social Media Icons -->
           <div class="icons">
-            <a href="#">
-              <i class="fa fa-facebook-square"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i class="fa fa-instagram"></i>
-            </a>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
           </div>
         </nav>
-        <!-- hero section -->
+
+        <!-- Hero Section -->
         <section>
           <div class="banner">
             <h1 class="banner-heading">
@@ -61,45 +61,81 @@
               our goal
             </h1>
             <p>
-              Get the perfect cut every time of your dreams at the barber shop
-              that cares about your style
+              Get the perfect cut every time at the barber shop that cares about
+              your style.
             </p>
 
             <div class="btn">
-              <button>Appointment</button>
+              <button class="btn2">Appointment</button>
               <button class="btn1">Contact us</button>
             </div>
           </div>
         </section>
 
-        <!-- seperete div -->
+        <!-- Customer Review -->
         <div class="container">
           <div class="container-text">Review</div>
           <div class="box">
             <div class="image">
-              <img src="./assets/images/profile.jpeg" alt="small-image" />
+              <img src="./assets/images/profile.jpeg" alt="Customer Profile" />
               <div class="small-text">
                 <h3 class="name">Frank Parker</h3>
-                <small>2 month ago</small>
+                <small>2 months ago</small>
               </div>
             </div>
           </div>
           <div class="statement">
             Barbers cut hair with care and attention to detail. A really good
-            barbers who know their business
+            barbers who know their business.
           </div>
         </div>
 
-        <!-- next seperate div -->
-
+        <!-- Monthly Care Bundle -->
         <div class="content">
-          <img src="./assets/images/profile2.jpeg" alt="" />
+          <img src="./assets/images/profile2.jpeg" alt="Monthly Care Bundle" />
           <h4>Monthly care bundle</h4>
           <p>95<sup>$</sup></p>
         </div>
       </header>
 
       <!-- end of header section -->
+
+      <!-- about us section -->
+      <section class="about">
+        <div class="experience">
+          <p>15</p>
+          <strong>years experience</strong>
+        </div>
+
+        <div class="about-context">
+          <div class="content-text">
+            <h3>Who we are</h3>
+            <p>
+              Barbers is a team of passionate experienced professionals
+              dedicated to providing the highest quality of hair styling on the
+              market. Our mission is to help you achieve your best hair day,
+              every day. We believe that beauty should be accessible to
+              everyone, which is why we offer affordable innovative products
+              that are easy to use and deliver professional result
+            </p>
+            <a href="#" class="readmore">More about us</a>
+          </div>
+        </div>
+      </section>
+      <!-- end of about us section -->
+
+      <!-- services section -->
+      <section class="services">
+        <div class="services-text">
+          <h3>Our services</h3>
+          <p>
+            we are dedicated to providing you with best possible experience. Our
+            team of experts is here to help you every step of the way, from
+            choosing the right service to the end.
+          </p>
+        </div>
+        <div class="cards"></div>
+      </section>
     </div>
   </body>
 </html>
