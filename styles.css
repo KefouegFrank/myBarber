@@ -20,6 +20,10 @@
   text-decoration: none;
 }
 
+html{
+  overflow-x: hidden;
+}
+
 /* Header styles */
 header {
   height: 110vh;
